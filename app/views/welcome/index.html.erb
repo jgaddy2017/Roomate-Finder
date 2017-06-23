@@ -1,3 +1,5 @@
+
+
 <div class="row">
 	<div class="col-sm-4 col-sm-offset-4">
 		<h1 style="text-align:center">Roomate Finder</h1>
@@ -5,26 +7,14 @@
 </div>
 
 <hr>
-
 <div class="row">
-	<div class="col-sm-4 col-sm-offset-4">
-		<div class="col-sm-12">
-			<h3>Label</h3>
-		</div>
-		<div class="col-sm-12">
-			<input type="text" id="firstLabel" name="firstLabel" class="form-control">
-		</div>
+	<div class="col-sm-6">
+		<button type="submit" id="logIn" name="logIn" class="form-control"> Log In </button>
 	</div>
+	<%= form_tag("/welcome", method: "post") do %>
+	<div class="col-sm-6">
+		<button type="submit" id="signUp" name="signUp" class="form-control">Sign In</button>
+	</div>
+	<% end %>
 </div>
 
-<br>
-<div class="row">
-	<div class="col-sm-4 col-sm-offset-4">
-		<div class="col-sm-12">
-			<h3>Label</h3>
-		</div>
-		<div class="col-sm-12">
-			<input type="text" id="secondLabel" name="secondLabel" class="form-control">
-		</div>
-	</div>
-</div>
