@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 20170626163233) do
 
-  create_table "users", force: :cascade do |t|
+  create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string   "firstName"
     t.string   "middleName"
     t.string   "lastName"
