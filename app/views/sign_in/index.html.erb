@@ -1,0 +1,188 @@
+
+
+<div class="row">
+	<div class="col-sm-4 col-sm-offset-4">
+		<h1 style="text-align:center">Roomate Finder</h1>
+	</div>
+</div>
+<hr>
+
+
+<%= form_for :user, url: sign_in_path do |f| %>
+<div class="row">
+	<div class="col-sm-3 col-sm-offset-1">
+		<div class="col-sm-12">
+			<h3>First Name:</h3>
+		</div>
+		<div class="col-sm-12">
+			<%= f.text_field :firstName, class: "form-control" %>
+		</div>
+	</div>
+	<div class="col-sm-3">
+		<div class="col-sm-12">
+			<h3>Middle Name:</h3>
+		</div>
+		<div class="col-sm-12">
+			<%= f.text_field :middleName, class: "form-control" %>
+		</div>
+	</div>
+	<div class="col-sm-3">
+		<div class="col-sm-12">
+			<h3>Last Name:</h3>
+		</div>
+		<div class="col-sm-12">
+			<%= f.text_field :lastName, class: "form-control" %>
+		</div>
+	</div>
+</div>
+<br>
+<div class="row">
+	<div class="col-sm-2 col-sm-offset-1">
+		<div class="col-sm-12">
+			<h3>Age:</h3>
+		</div>
+		<div class="col-sm-12">
+			<%= f.text_field :age, class: "form-control" %>
+		</div>
+	</div>
+	<div class="col-sm-5">
+		<div class="col-sm-12">
+			<h3>City To Search:</h3>
+		</div>
+		<div class="col-sm-12">
+			<%= f.text_field :city, class: "form-control" %>
+		</div>
+	</div>
+	<div class="col-sm-2">
+		<div class="col-sm-12">
+			<h3>State:</h3>
+		</div>
+		<div class="col-sm-12">
+			<%= select_tag(:state, options_for_select([
+				['', ''],
+				['AL', 'AL'],
+				['AK', 'AK'],
+				['AZ', 'AZ'],
+				['AR', 'AR'],
+				['CA', 'CA'],
+				['CO', 'CO'],
+				['CT', 'CT'],
+				['DE', 'DE'],
+				['FL', 'FL'],
+				['GA', 'GA'],
+				['HI', 'HI'],
+				['ID', 'ID'],
+				['IL', 'IL'],
+				['IN', 'IN'],
+				['IA', 'IA'],
+				['KS', 'KS'],
+				['KY', 'KY'],
+				['LA', 'LA'],
+				['ME', 'ME'],
+				['MD', 'MD'],
+				['MA', 'MA'],
+				['MI', 'MI'],
+				['MN', 'MN'],
+				['MS', 'MS'],
+				['MO', 'MO'],
+				['MT', 'MT'],
+				['NE', 'NE'],
+				['NV', 'NV'],
+				['NH', 'NH'],
+				['NY', 'NY'],
+				['NC', 'NC'],
+				['ND', 'ND'],
+				['OH', 'OH'],
+				['OK', 'OK'],
+				['OR', 'OR'],
+				['PA', 'PA'],
+				['RI', 'RI'],
+				['SC', 'SC'],
+				['SD', 'SD'],
+				['TN', 'TN'],
+				['TX', 'TX'],
+				['UT', 'UT'],
+				['VT', 'VT'],
+				['VA', 'VA'],
+				['WV', 'WV'],
+				['WI', 'WI'],
+				['WY', 'WY']
+				]), class: "form-control") %>
+		</div>
+	</div>
+</div>
+<br>
+<div class="row">
+	<div class="col-sm-3 col-sm-offset-1">
+		<div class="col-sm-12">
+			<h3>Email:</h3>
+		</div>
+		<div class="col-sm-12">
+			<%= f.text_field :email, class: "form-control" %>
+		</div>
+	</div>
+	<div class="col-sm-3">
+		<div class="col-sm-12">
+			<h3>Username:</h3>
+		</div>
+		<div class="col-sm-12">
+			<%= f.text_field :username, class: "form-control" %>
+		</div>
+	</div>
+	<div class="col-sm-3">
+		<div class="col-sm-12">
+			<h3>Password:</h3>
+		</div>
+		<div class="col-sm-12">
+			<%= f.text_field :password, class: "form-control" %>
+		</div>
+	</div>
+</div>
+<!--
+<br>
+<div class="row">
+	<div class="col-sm-3 col-sm-offset-7">
+		<div class="col-sm-12">
+			<h3>Verify Password:</h3>
+		</div>
+		<div class="col-sm-12">
+			<input type="text" id="verifyPassword" name="verifyPassword" class="form-control">
+		</div>
+	</div>
+</div>
+-->
+<br>
+<br>
+<div class="row">
+	<div class="col-sm-9 col-sm-offset-1">
+		<div clas="col-sm-12">
+			<%= f.submit "Create New Profile", class: "form-control" %>
+		</div>
+	</div>
+</div>
+<br>
+<% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

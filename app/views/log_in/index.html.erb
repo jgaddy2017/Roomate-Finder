@@ -1,0 +1,42 @@
+
+<div class="row">
+	<div class="col-sm-4 col-sm-offset-4">
+		<h1 style="text-align:center">Roomate Finder</h1>
+	</div>
+</div>
+
+<br>
+<br>
+
+<%= form_tag("/log_in", method: "post") do %>
+<div class="row">
+	<div class="col-sm-4 col-sm-offset-4">
+		<div class="col-sm-12">
+			<h3>Enter Username</h3>
+		</div>
+		<div class="col-sm-12">
+			<input type="text" id="username" name="username" class="form-control">
+		</div>
+	</div>
+</div>
+<br>
+<div class="row">
+	<div class="col-sm-4 col-sm-offset-4">
+		<div class="col-sm-12">
+			<h3>Enter Password</h3>
+		</div>
+		<div class="col-sm-12">
+			<input type="text" id="password" name="password" class="form-control">
+		</div>
+	</div>
+</div>
+<br>
+<br>
+<div class="row">
+	<div class="col-sm-4 col-sm-offset-4">
+		<div class="col-sm-12">
+			<button type="submit" id="logIn" name="logIn" class="form-control">Log In</button>
+		</div>
+	</div>
+</div>
+<% end %>

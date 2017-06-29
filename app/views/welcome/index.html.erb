@@ -8,13 +8,20 @@
 
 <hr>
 <div class="row">
+	<%= form_tag("/welcome", method: "post") do %>
+
 	<div class="col-sm-6">
 		<button type="submit" id="logIn" name="logIn" class="form-control"> Log In </button>
 	</div>
+
+	<% end %>
+
 	<%= form_tag("/welcome/new", method: "get") do %>
+
 	<div class="col-sm-6">
 		<button type="submit" id="signUp" name="signUp" class="form-control">Sign In</button>
 	</div>
+
 	<% end %>
 </div>
 
